@@ -22,6 +22,10 @@ In collaboration with [Panagiotis Drivas](https://github.com/PanagiotisDrivas)
 
 `evaluation` directory contains the implementation of an app that compares the accuracy and speed for each of the 9 polygonization-optimization combinations formed using the previously mentioned algorithms.
 
+## Instances
+
+`instances` directory contains example instances used for the development and evaluation of these programs.
+
 <br>
 
 `CGAL 5.5` along with `CMake` are used for this project.
