@@ -21,6 +21,10 @@ make clean
 
 ## Results for point sets of different size (in ms):
 
+score = (area from polygonization+optimization algorithms) / (convex hull area)
+
+When no feasible solution is found or cut-off time is up, score=1 is used for minimization problems and score=0 is used for maximization problems.
+
 | Number of points | Local Search (Incremental) | --/-- | --/-- | --/-- | Simulated Annealing (Incremental) | --/-- | --/-- | --/-- | Local Search (Convex Hull) | --/-- | --/-- | --/-- | Simulated Annealing (Convex Hull) | --/-- | --/-- | --/-- | Simulated Annealing Subdivision | --/-- | --/-- | --/-- |
 | :--- | :----: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | Size | min score | max score | min bound | max bound | min score | max score | min bound | max bound | min score | max score | min bound | max bound | min score | max score | min bound | max bound | min score | max score | min bound | max bound |
@@ -32,7 +36,7 @@ make clean
 | 500  | 3.12213   | 0.782273  | 1         | 0         | 0.751382  | 3.05309   | 0.254925  | 0.732747  | 4         | 0.918169  | 1         | 0         | 1.71951   | 2.62186   | 1         | 0         | 0.785592  | 3.1461    | 0.287392  | 0.730856  |
 | 1000 | 3         | 0         | 1         | 0         | 0.555045  | 2.33161   | 0.258352  | 0.710222  | 3         | 0         | 1         | 0         | 1.49372   | 1.82242   | 1         | 0         | 0.564033  | 2.36196   | 0.284507  | 0.770118  |
 
-The above table contains results for the following point sets:
+The above table (also in `comparison.txt`) contains results for the following point sets:
 
 `euro-night-0000010.instance`, `euro-night-0000020.instance`, `euro-night-0000050.instance`, `euro-night-0000100.instance`, `euro-night-0000200.instance`, `euro-night-0000500.instance`, `euro-night-0001000.instance`,<br>
 `stars-0000010.instance`, `stars-0000020.instance`, `stars-0000050.instance`, `stars-0000100.instance`, `stars-0000200.instance`, `stars-0000500.instance`,<br>
